@@ -1,0 +1,143 @@
+==============================================================
+          ML IDEA GENERATOR — DATA FILE
+  College | Healthcare | Shopping — Input -> Output
+==============================================================
+
+##############################################################
+  DOMAIN : COLLEGE / EDUCATION
+##############################################################
+
+  [01] Student Dropout Prediction
+  ────────────────────────────────────────────────────────
+  Problem  : Predict which students are at risk of dropping out so counselors can intervene early.
+  ML Type  : Binary Classification (Supervised Learning)
+  Input    : Attendance %, assignment submission rate, mid-term scores, LMS login frequency, socioeconomic background, backlogs
+  Output   : Dropout Risk = High / Medium / Low + Top 3 contributing reasons
+  Impact   : Colleges proactively assign mentors and reduce dropout rates.
+
+  [02] Personalized Study Plan Generator
+  ────────────────────────────────────────────────────────
+  Problem  : Generate a custom weekly study schedule based on each student's strengths and weaknesses.
+  ML Type  : Recommendation System + Regression
+  Input    : Subject-wise test scores, time available per day, learning style, upcoming exam dates
+  Output   : Day-wise study plan with topic priority + recommended resources (videos/notes/practice)
+  Impact   : Students cover weak areas first, reducing last-minute cramming.
+
+  [03] Automated Answer Sheet Evaluation
+  ────────────────────────────────────────────────────────
+  Problem  : Manually checking descriptive answers is slow and inconsistent. ML can grade answers fairly and instantly.
+  ML Type  : NLP — Semantic Similarity + Regression
+  Input    : Student's written answer, model answer from teacher, maximum marks
+  Output   : Marks awarded (e.g. 7/10) + Feedback: 'Missing mention of X concept'
+  Impact   : Faster results, consistent grading, and detailed feedback at scale.
+
+  [04] Campus Placement Predictor
+  ────────────────────────────────────────────────────────
+  Problem  : Predict whether a student will get placed and estimate the expected salary range.
+  ML Type  : Classification + Regression (Supervised)
+  Input    : CGPA, internships, certifications, coding rankings, communication score, technical skills
+  Output   : Placement Probability (e.g. 82%) + Predicted Salary Range (e.g. 5–8 LPA) + Skill gaps
+  Impact   : Students and placement officers plan preparation strategy well in advance.
+
+  [05] Lecture Engagement Analyzer
+  ────────────────────────────────────────────────────────
+  Problem  : Measure real-time student engagement during online/offline classes and alert teachers.
+  ML Type  : Computer Vision + Time Series Analysis
+  Input    : Webcam video frames, LMS activity (mouse/keyboard), quiz response time
+  Output   : Engagement Score (0–100%) per student + Attention dip timeline + Alert if avg < 40%
+  Impact   : Teachers adjust pace or add activities when engagement drops.
+
+##############################################################
+  DOMAIN : HEALTHCARE
+##############################################################
+
+  [06] Disease Risk Prediction
+  ────────────────────────────────────────────────────────
+  Problem  : Predict the likelihood of a patient developing diabetes, heart disease, or hypertension before symptoms appear.
+  ML Type  : Binary / Multi-class Classification
+  Input    : Age, gender, BMI, blood pressure, blood glucose, cholesterol, family history, lifestyle habits
+  Output   : Risk Level = High / Medium / Low + Predicted condition + Recommended lifestyle changes
+  Impact   : Early intervention saves lives and reduces long-term treatment costs.
+
+  [07] Medical Image Diagnosis (X-Ray / MRI)
+  ────────────────────────────────────────────────────────
+  Problem  : Assist radiologists by instantly flagging abnormalities in X-rays, MRIs, and CT scans.
+  ML Type  : CNN — Image Classification + Object Detection
+  Input    : X-Ray or MRI scan image (DICOM/JPEG), patient age, known symptoms
+  Output   : Normal / Abnormal + Abnormality location highlighted + Diagnosis (e.g. 'Pneumonia: 91%')
+  Impact   : Faster diagnosis in rural hospitals where specialist radiologists are scarce.
+
+  [08] Hospital Readmission Predictor
+  ────────────────────────────────────────────────────────
+  Problem  : Predict readmission risk before a patient is discharged to prevent early returns.
+  ML Type  : Binary Classification (Supervised Learning)
+  Input    : Diagnosis, length of stay, previous admissions, medications, age, discharge condition score
+  Output   : Readmission Risk = High / Low + Recommended post-discharge care plan
+  Impact   : Hospitals reduce costly readmissions; patients get better follow-up care.
+
+  [09] Medicine Demand Forecasting
+  ────────────────────────────────────────────────────────
+  Problem  : Predict how much medicine stock is needed each week/month to prevent shortages and wastage.
+  ML Type  : Time Series Forecasting (LSTM / ARIMA)
+  Input    : Historical consumption data, seasonal disease patterns, population, disease outbreaks
+  Output   : Predicted units needed per medicine per period + Reorder alert when stock is low
+  Impact   : Zero stockouts of critical medicines and reduced wastage of expensive drugs.
+
+  [10] Mental Health Sentiment Tracker
+  ────────────────────────────────────────────────────────
+  Problem  : Analyze patient text/speech to detect early signs of depression or anxiety before crises occur.
+  ML Type  : NLP — Sentiment Analysis + Classification
+  Input    : Patient's journal entries (text), questionnaire responses, therapy session speech recordings
+  Output   : Status = Stable / At Risk / Critical + Emotion breakdown + Alert to therapist if critical
+  Impact   : Therapists prioritize patients who need urgent attention, preventing mental health crises.
+
+##############################################################
+  DOMAIN : SHOPPING / E-COMMERCE
+##############################################################
+
+  [11] Product Recommendation Engine
+  ────────────────────────────────────────────────────────
+  Problem  : Show customers products they are most likely to buy, increasing sales and reducing search time.
+  ML Type  : Collaborative Filtering + Deep Learning
+  Input    : Browsing history, past purchases, wishlist/cart items, ratings, demographic info, time of day
+  Output   : Top 10 personalized recommendations + 'Frequently bought together' + 'Others also bought'
+  Impact   : Amazon attributes ~35% of its revenue to its recommendation engine alone.
+
+  [12] Dynamic Pricing Optimizer
+  ────────────────────────────────────────────────────────
+  Problem  : Automatically adjust product prices based on demand, competition, and user behavior.
+  ML Type  : Reinforcement Learning + Regression
+  Input    : Stock level, competitor prices, demand trend (7/30 days), time of day, festival/sale flags
+  Output   : Optimal price at that moment + Expected revenue impact of the change
+  Impact   : Maximises profit during peak demand; stays competitive during slow periods.
+
+  [13] Fake Review Detector
+  ────────────────────────────────────────────────────────
+  Problem  : Detect AI-generated or incentivised reviews automatically before they go live.
+  ML Type  : NLP — Binary Text Classification
+  Input    : Review text, reviewer account age, reviews posted by same user, verified purchase flag, rating
+  Output   : FAKE / GENUINE + Confidence score (e.g. '87% likely fake') + Reason for flagging
+  Impact   : Builds buyer trust and protects authentic sellers on the platform.
+
+  [14] Customer Churn Prediction
+  ────────────────────────────────────────────────────────
+  Problem  : Predict which customers are about to stop shopping so targeted retention offers can be made.
+  ML Type  : Binary Classification (Supervised Learning)
+  Input    : Days since last purchase, average order value, lifetime spend, returns, support tickets, app usage
+  Output   : Churn Probability (e.g. 73%) + Segment (Loyal/At Risk/Lost) + Recommended retention offer
+  Impact   : Targeted campaigns reduce churn, saving significant customer acquisition cost.
+
+  [15] Visual Search — Shop by Image
+  ────────────────────────────────────────────────────────
+  Problem  : Let customers upload a photo of any product they like and instantly find it in the store.
+  ML Type  : CNN + Image Similarity (Siamese Network)
+  Input    : Photo uploaded by customer (any angle) + optional filters (price range, color, brand)
+  Output   : Top 5 visually similar products + Match % for each + Direct 'Add to Cart' links
+  Impact   : Reduces search friction, increases impulse purchases, improves customer experience.
+
+==============================================================
+  Total Ideas : 15  (5 per domain)
+  ML Types    : Classification, Regression, NLP, CNN,
+                Recommendation, Reinforcement Learning,
+                Time Series Forecasting
+==============================================================

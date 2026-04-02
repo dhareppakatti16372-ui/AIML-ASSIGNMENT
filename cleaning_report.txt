@@ -1,0 +1,55 @@
+======================================================================
+        DATA DOCTOR — CLEANING REPORT
+======================================================================
+
+  Raw rows    : 20
+  Clean rows  : 18
+  Total fixes : 23
+
+  TEXT STANDARDIZED:
+    ID 2: Name 'priya verma'->'Priya Verma'  City 'delhi'->'Delhi'  Grade 'a+'->'A+'
+    ID 3: Name 'ROHIT SINGH'->'Rohit Singh'  City 'Bangalore'->'Bangalore'  Grade 'B'->'B'
+    ID 4: Name 'Sneha Patil'->'Sneha Patil'  City 'pune'->'Pune'  Grade 'b+'->'B+'
+    ID 5: Name '  Karan Mehta  '->'Karan Mehta'  City 'MUMBAI'->'Mumbai'  Grade 'C'->'C'
+    ID 6: Name 'priya verma'->'Priya Verma'  City 'delhi'->'Delhi'  Grade 'a+'->'A+'
+    ID 8: Name 'ARJUN REDDY'->'Arjun Reddy'  City 'hyderabad'->'Hyderabad'  Grade 'b'->'B'
+    ID 11: Name '  pooja Gupta  '->'Pooja Gupta'  City 'PUNE'->'Pune'  Grade 'c+'->'C+'
+    ID 13: Name 'ROHIT SINGH'->'Rohit Singh'  City 'Bangalore'->'Bangalore'  Grade 'B'->'B'
+    ID 15: Name 'Nikhil Pillai'->'Nikhil Pillai'  City 'bangalore'->'Bangalore'  Grade 'F'->'F'
+    ID 17: Name 'Aditya Kumar'->'Aditya Kumar'  City 'jaipur'->'Jaipur'  Grade 'A+'->'A+'
+    ID 18: Name 'kavya menon'->'Kavya Menon'  City 'Chennai'->'Chennai'  Grade 'B'->'B'
+
+  DUPLICATES REMOVED:
+    ID 6 — 'Priya Verma' from Delhi (exact duplicate)
+    ID 13 — 'Rohit Singh' from Bangalore (exact duplicate)
+
+  MISSING AGE FILLED:
+    ID 2 (Priya Verma) Age: None -> 21.6
+    ID 9 (Meera Iyer) Age: None -> 21.6
+    ID 14 (Ananya Roy) Age: None -> 21.6
+    ID 19 (Sahil Sheikh) Age: None -> 21.6
+
+  MISSING MARKS FILLED:
+    ID 3 (Rohit Singh) Marks: None -> 76.3
+    ID 7 (Divya Nair) Marks: None -> 76.3
+    ID 16 (Swati Tiwari) Marks: None -> 76.3
+    ID 20 (Riya Kapoor) Marks: None -> 76.3
+
+  OUTLIERS FIXED:
+    ID 10 (Vikram Das): Marks 150 -> 100 (clamped)
+    ID 15 (Nikhil Pillai): Marks -10 -> 0 (clamped)
+
+======================================================================
+  WHY DATA CLEANING MATTERS:
+======================================================================
+
+  Missing Values  -> ML models crash or produce biased results
+  Duplicates      -> Model overfits to repeated patterns
+  Inconsistent Text -> Creates false categories (Mumbai != MUMBAI)
+  Outliers        -> Corrupts mean/regression/clustering results
+
+  'Garbage In, Garbage Out' — clean data is the foundation
+  of every reliable AI/ML model. Data scientists spend 60-80%
+  of their time on data cleaning for this reason.
+
+======================================================================

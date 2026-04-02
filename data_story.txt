@@ -1,0 +1,152 @@
+============================================================
+        STORYTELLING WITH GRAPHS - DATA STORY
+        Dataset: Global Smartphone Market (2022-2023)
+============================================================
+
+OVERVIEW
+--------
+This data story explores three key dimensions of the global
+smartphone industry using three different chart types:
+
+  Chart 1 - Bar Chart   : Brand-wise sales volume (2022 vs 2023)
+  Chart 2 - Pie Chart   : Market share distribution (2023)
+  Chart 3 - Histogram   : Age distribution of smartphone buyers
+
+
+============================================================
+  CHART 1 - BAR CHART STORY
+  "The Battle for Billions"
+============================================================
+
+The grouped bar chart compares smartphone unit sales (in millions)
+across six major brands between 2022 and 2023.
+
+KEY OBSERVATIONS:
+
+  * Samsung leads with 226M units in 2023, up from 211M in 2022
+    — a healthy +7.1% YoY increase. This signals sustained
+    consumer trust and a strong mid-range product lineup.
+
+  * Apple surged from 166M to 181M units (+9.0%), making it
+    the fastest-growing top brand. The iPhone 15 series and
+    expanding emerging market presence drove this jump.
+
+  * Xiaomi held steady (125M to 130M), continuing its dominance
+    in budget-conscious markets across South and Southeast Asia.
+
+  * OPPO and Vivo both posted solid gains. Vivo grew +16%,
+    showing Chinese brands quietly eating into the fragmented
+    "Others" category.
+
+  * The "Others" bucket (308M in 2023) remains the largest
+    slice overall but grew slower than named brands, suggesting
+    market consolidation is underway.
+
+TREND SUMMARY:
+The smartphone market is recovering post-pandemic. Premium
+brands (Apple, Samsung) are growing faster than average,
+suggesting consumers are willing to spend more on flagship
+devices. The "good enough" budget phone era may be giving
+way to an aspirational upgrade cycle.
+
+
+============================================================
+  CHART 2 - PIE / DONUT CHART STORY
+  "A Slice of 1.4 Billion Units"
+============================================================
+
+The donut chart visualises 2023 market share percentages across
+six brands, offering a bird's-eye view of who dominates the
+global smartphone landscape.
+
+KEY OBSERVATIONS:
+
+  * Samsung (21.6%) and Apple (17.3%) together command
+    39% of the global market — an extraordinary duopoly.
+    Their combined revenue likely accounts for 60%+ of total
+    industry profit due to higher Average Selling Prices.
+
+  * Xiaomi (12.5%) is a clear #3, punching above its weight
+    in the sub-$300 segment across India, Europe, and LatAm.
+
+  * OPPO (10.2%) and Vivo (8.9%) — both under BBK Electronics
+    — together hold 19% market share. Their shared parent
+    gives them supply chain advantages others cannot match.
+
+  * "Others" (29.5%) hides hundreds of regional OEMs: Tecno
+    and Itel in Africa, Lava in India, Honor in China. As
+    these brands mature, they could disrupt rankings by 2030.
+
+TREND SUMMARY:
+The market is simultaneously concentrated (top 2 own 39%)
+and fragmented (Others own 29.5%). This duality creates
+intense competition in both premium and budget segments.
+
+
+============================================================
+  CHART 3 - HISTOGRAM STORY
+  "Who's Actually Buying These Phones?"
+============================================================
+
+The histogram shows the age distribution of smartphone buyers,
+with colour-coded age bands and reference lines for mean and
+median age.
+
+KEY OBSERVATIONS:
+
+  * The distribution peaks between ages 22-32. This "young
+    adult" cohort is the core buyer demographic — earning
+    first salaries, upgrading devices, and brand-loyal.
+
+  * Mean age   : 36.1 years
+    Median age : 33.0 years
+    The mean is slightly higher than the median, confirming a
+    right-skew. Older buyers (50-70) in developing regions
+    pull the average upward.
+
+  * Teen buyers (<25) form a sizable secondary peak. Heavily
+    influenced by social media and peer behaviour — a critical
+    target for brands like Apple and Samsung.
+
+  * The 40-55 segment is thinner but has the HIGHEST average
+    spend per device, often choosing premium flagships.
+
+  * Very few buyers are above 65, though this is a growing
+    segment as digital literacy improves, especially in India
+    and Southeast Asia.
+
+TREND SUMMARY:
+Brands must think in two tracks: (1) hook younger buyers
+early for lifetime loyalty, and (2) offer intuitive, large-
+display, accessible devices for the rising 50+ segment.
+A one-size-fits-all strategy is no longer viable.
+
+
+============================================================
+  OVERALL CONCLUSION
+============================================================
+
+  1. GROWTH IS BACK    - Apple (+9.0%) and Samsung (+7.1%) led
+                         strong YoY recovery post-pandemic.
+
+  2. CONSOLIDATION     - "Others" shrinking as named brands
+                         absorb market share globally.
+
+  3. DIVERSE BUYERS    - From teens to seniors, segmented
+                         strategies are now essential.
+
+  4. PROFIT > VOLUME   - Apple & Samsung earn outsized profit
+                         despite not having the most units.
+
+  5. NEXT BATTLEGROUND - 50+ demographic and first-time users
+                         in Africa & rural Asia by 2030.
+
+------------------------------------------------------------
+  Tool  : Python | matplotlib | numpy
+  Data  : Simulated based on public industry trends
+  Files :
+    chart1_bar.png
+    chart2_pie.png
+    chart3_histogram.png
+    data_story.txt        <- this file
+============================================================

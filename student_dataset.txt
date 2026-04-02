@@ -1,0 +1,42 @@
+========================================================================
+          BUILD YOUR FIRST DATASET
+          Study Hours vs Marks — 20 Students
+========================================================================
+
+  #    Name        Study Hrs  Sleep Hrs  Attendance%   Marks
+  --------------------------------------------------------
+  1    Aarav             1.0          5           55      32
+  2    Priya             2.0          5           60      40
+  3    Rohit             2.5          6           62      45
+  4    Sneha             3.0          6           65      50
+  5    Karan             3.5          7           68      54
+  6    Divya             4.0          6           70      58
+  7    Arjun             4.5          7           72      62
+  8    Meera             5.0          7           75      65
+  9    Vikram            5.5          8           76      67
+  10   Pooja             6.0          7           80      70
+  11   Rahul             6.5          8           82      73
+  12   Ananya            7.0          7           84      75
+  13   Nikhil            7.5          8           85      77
+  14   Swati             8.0          8           87      80
+  15   Aditya            8.5          7           88      82
+  16   Kavya             9.0          9           90      85
+  17   Sahil             9.5          8           91      87
+  18   Riya             10.0          9           93      90
+  19   Harish           10.5          8           95      93
+  20   Nisha            11.0          9           97      96
+
+========================================================================
+  FEATURES (X — Inputs):
+    1. study_hours    — Hours studied per day
+    2. sleep_hours    — Hours of sleep per night
+    3. attendance_pct — Attendance percentage
+
+  LABEL (Y — Output):
+    marks             — Exam marks scored out of 100
+
+  RELATIONSHIP:
+    More study hours -> Higher marks (strong positive correlation)
+    Better sleep     -> Slightly better marks (moderate)
+    Higher attendance-> Higher marks (strong positive correlation)
+========================================================================
