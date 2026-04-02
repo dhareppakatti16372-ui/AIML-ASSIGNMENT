@@ -1,0 +1,27 @@
+# Install: pip install openai
+
+from openai import OpenAI
+
+# Initialize client (replace with your API key)
+client = OpenAI(api_key="YOUR_API_KEY")
+
+# Tricky prompts
+prompts = [
+    "Translate 'I never said she stole my money' with different meanings",
+    "What is the opposite of opposite?",
+    "If a plane crashes on the border, where do you bury survivors?",
+    "Can you create a square circle?",
+    "Explain this sentence: 'Colorless green ideas sleep furiously'"
+]
+
+print("---- AI Responses ----\n")
+
+for i, prompt in enumerate(prompts, 1):
+    response = client.responses.create(
+        model="gpt-4.1-mini",
+        input=prompt
+    )
+    
+    print(f"Prompt {i}: {prompt}")
+    print("Response:", response.output[0].content[0].text)
+    print("\n" + "-"*50 + "\n")
